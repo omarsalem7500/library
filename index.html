@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="books.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Library</h2>
+        <button id="add-book">+</button>
+      </header>
+    <div class = "main container">
+        <!-- <button class = "add-book" id = "add-book">Add Book</button> -->
+        <div class = "books-grid" id = "books-grid"></div>
+        <div class="pop-up" id="menu">
+            <form id="book-form">
+                <span class="close">&times;</span>
+                <div class="form-container">
+                    <h1 class="form-header">
+                        New Book
+                    </h1>
+                    <div class="input-container">
+                        <label for="title"></label>
+                        <input type="text" name="title" id="title" required>
+                        <span>
+                            Title
+                        </span>
+                    </div>
+                    <div class="input-container">
+                        <label for="author"></label>
+                        <input type="text" name="author" id="author" required>
+                        <span>
+                            Author
+                        </span>
+                    </div>
+                    <div class="input-container">
+                        <label for="pages">
+                        </label>
+                        <input type="number" name="pages" id="pages" min="1" required>
+                        <span>
+                            Pages
+                        </span>
+                    </div>
+                    <div class="input-container checkbox">
+                        <span class="checkbox">
+                            Read
+                        </span>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="read-status-determiner" id ="status">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div id="btn">
+                        <button type="submit" class="submit-btn">Add to Library</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
